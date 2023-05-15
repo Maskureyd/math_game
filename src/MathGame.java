@@ -4,10 +4,15 @@ public class MathGame {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String[] islemler = {"+", "-", "*", "/"};
-        int[] dogruCevap = new int[5];
+        int soruSayisi; 
+        int[] dogruCevap ;
         int dogruCevapSayisi = 0;
+        
+        System.out.println("Matematik oyununa hoşgeldiniz. Kaç soru çözmek istediğinizi giriniz:");//GİRİŞ MESAJI EKLENDİ
+        soruSayisi = input.nextInt(); 
+        dogruCevap = new int[soruSayisi]; 
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < soruSayisi; i++) {
             int sayi1 = (int) (Math.random() * 10);
             int sayi2 = (int) (Math.random() * 10);
 
@@ -32,6 +37,6 @@ public class MathGame {
             }
         }
 
-        System.out.println("Oyun bitti. Toplam doğru cevap sayısı: " + dogruCevapSayisi + "/5");
+       System.out.println("Oyun bitti. Toplam doğru cevap sayısı: " + dogruCevapSayisi + " / " + soruSayisi);
     }
 }
