@@ -30,7 +30,7 @@ public class MathGame {
             int cevap = input.nextInt();
 
             if (cevap == dogruCevap[i]) {
-                System.out.println("Tebrikler! Doğru cevap.");
+                System.out.println("Tebrikler!! Doğru cevap.");
                 dogruCevapSayisi++;
             } else {
                 System.out.println("Üzgünüm, yanlış cevap. Doğru cevap: (" + dogruCevap[i]+")");
