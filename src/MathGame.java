@@ -8,7 +8,7 @@ public class MathGame {
         int[] dogruCevap ;
         int dogruCevapSayisi = 0;
         
-        System.out.println("Matematik oyununa hoşgeldiniz. Kaç soru çözmek istediğinizi giriniz: ");
+        System.out.println("Matematik oyununa hoşgeldiniz.  Kaç soru çözmek istediğinizi giriniz: ");
         soruSayisi = input.nextInt(); 
         dogruCevap = new int[soruSayisi]; 
 
